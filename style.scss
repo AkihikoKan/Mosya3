@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+@use "commonScss/topTitle";
+@use "styleScss/catchImg";
+@use "commonScss/menuNav";
+@use "styleScss/main";
+@use "commonScss/footer";
+
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}    
+
+body {
+  color: #333;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+#wrapper{
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
