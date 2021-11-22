@@ -93,6 +93,14 @@
   -webkit-text-decoration-color: #666;
           text-decoration-color: #666;
 }
+.main-info02 p .look {
+  background-color: #e5e5e5;
+  padding: 8px 10px;
+  margin: 5px 0;
+}
+.main-info02 p .look02 {
+  color: #D08047;
+}
 .main-info02 h4 {
   font-size: 16px;
   font-weight: bold;
@@ -121,6 +129,11 @@ footer .footer-bottom {
 .space02 {
   display: block;
   margin-bottom: 25px;
+}
+
+.space03 {
+  display: block;
+  margin-bottom: 40px;
 }
 
 .table01 {
