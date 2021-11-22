@@ -16,6 +16,15 @@
     border-radius: 8px;
     margin: 24px 0 20px;
   }
+  .gallery{
+    display: flex;
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
+    img{
+      width: 270px;
+      margin-right: 20px;
+    }
+  }
   &-info01{
     display: flex;
     margin: 26px 0 40px;
