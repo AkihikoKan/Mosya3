@@ -5,12 +5,14 @@
   width: 100%;
   max-width: 400px;
   margin: 40px auto;
+  cursor: pointer;
 }
 
 .catchImg img {
   width: 100%;
   border-radius: 10px;
   margin-bottom: 40px;
+  cursor: pointer;
 }
 
 .menuNav {
@@ -75,6 +77,7 @@
 .main .gallery img {
   width: 270px;
   margin-right: 20px;
+  cursor: pointer;
 }
 .main-info01 {
   display: -webkit-box;
@@ -130,6 +133,13 @@ footer .footer-top {
 }
 footer .footer-bottom {
   margin-bottom: 20px;
+}
+footer a {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+footer a:hover {
+  color: #d08047;
 }
 
 .space01 {

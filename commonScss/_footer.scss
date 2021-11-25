@@ -10,4 +10,10 @@ footer{
   .footer-bottom{
     margin-bottom: 20px;
   }
+  a{
+    transition: .3s;
+  }
+  a:hover{
+    color: rgb(208,128,71);
+  }
 }
