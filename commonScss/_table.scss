@@ -121,3 +121,42 @@
     text-align: center;
   }
 }
+
+//レスポンシブ対応用 table
+.table04{
+  display: none;
+}
+
+@media screen and (max-width:600px) {
+  .table04{
+    display: block;
+    margin-bottom: 30px;
+    .table-heading{
+      font-weight: bold;
+      padding: 20px 10px;
+      background-color: #eee;
+      border: 1px solid #999;
+      text-align: center;
+      margin-top: 20px;
+    }
+    .tableText{
+      .heading{
+        font-weight: bold;
+        padding: 15px 0;
+        border: 1px solid #999;
+        border-top: 0;
+        text-align: center;
+      }
+      .txt{
+        font-size: 14px;
+        padding: 20px 12px;
+        border: 1px solid #999;
+        border-top: 0;
+      }
+    }
+  }
+  .table01{
+    display: none;
+  }
+  
+}

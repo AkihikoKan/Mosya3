@@ -1,0 +1,125 @@
+//ハンバーガーメニュー内のメニュー
+nav {
+  //display: none;
+  position: fixed;
+  top: 50px;
+  right: 0;
+  background-color: rgb(208,128,71);
+  //opacity: 0;
+  //visibility: hidden;
+  transform: translateX(100%);
+  transition: 0.3s;
+  width: 100%;
+  height: 100%;
+
+  ul {
+      display: flex;
+      flex-direction: column;
+      //align-items: center;
+      //justify-content: center;
+      height: 100%;
+
+      li {
+          list-style: none;
+          margin-left: 30px;
+      }
+
+      li:not(:first-of-type) {
+          margin-top: 25px;
+      }
+
+      a {
+          text-decoration: none;
+          color: #fff;
+      }
+
+      li:first-of-type {
+          margin-top: 80px;
+      }
+  }
+}
+
+nav.open {
+  //display: block;
+  opacity: 0.9;
+  //visibility: visible;
+  transform: translateX(0%);
+  z-index: 12;
+}
+
+
+@media screen and (max-width:600px) {
+          //ハンバーガーメニュー 三本線
+          .hamburgerMenu{
+            display: block;
+            width: 100%;
+            height: 50px;
+            position: fixed;
+            top: 0;
+            background: -moz-linear-gradient(bottom,rgb(208,128,71),rgb(200, 169, 145));
+            background: -webkit-linear-gradient(bottom,rgb(208,128,71),rgb(200, 169, 145));
+            background: linear-gradient(to top,rgb(208,128,71),rgb(200, 169, 145));
+          }
+          .menuButton {
+            display: block;
+            width: 50px;
+            height: 50px;
+            position: fixed;
+            top: 0;
+            right: 0;
+            transition: .3s;
+            cursor: pointer;
+
+            div {
+                height: 1px;
+                width: 60%;
+                background-color: #fff;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                transition: .3s;
+            }
+
+            div:nth-of-type(1) {
+                transform: translate(-50%, -12px);
+            }
+
+            div:nth-of-type(3) {
+                transform: translate(-50%, 12px);
+            }
+        }
+
+        //メニューボタン（.active）の✕の定義
+        .menuButton.open {
+            transform: rotate(180deg);
+        }
+
+        .menuButton.open div:nth-of-type(1) {
+            transform: rotate(45deg) translate(-50%, 0px);
+            transform-origin: 0% 50%;
+            background-color: #fff;
+
+        }
+
+        .menuButton.open div:nth-of-type(2) {
+            opacity: 0;
+            //transform: translate(0%, -50%);
+
+        }
+
+        .menuButton.open div:nth-of-type(3) {
+            transform: rotate(-45deg) translate(-50%, 0px);
+            transform-origin: 0% 50%;
+            background-color: #fff;
+
+
+        }
+
+        #nav {
+          a {
+              font-size: 30px;
+          }
+      }
+  
+}

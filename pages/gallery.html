@@ -12,21 +12,39 @@
   <title>Document</title>
   <meta name="description" content="模写HP3">
   <meta name="author" content="かん あきひこ">
-  <script src="script.js" defer></script>
+  <script src="../script.js" defer></script>
 
 </head>
 
 <body>
+  <!--ハンバーガーメニュー-->
+  <div class="hamburgerMenu">
+    <a class="menuButton" id="menuButton">
+      <div></div>
+      <div></div>
+      <div></div>
+    </a>
+  </div>
+  <nav id="nav">
+    <ul>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="#">Gallery</a></li>
+      <li><a href="link.html">Link</a></li>
+    </ul>
+  </nav>
+  <!--END-->
+
   <div id="wrapper">
     <div class="topTitle">
-      <img src="../images/logo.png" alt="">
+      <a href="../index.html"><img src="../images/logo.png" alt=""></a>
     </div>
     <div class="menuNav">
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
         <li><a href="#">Gallery</a></li>
-        <li><a href="#">Link</a></li>
+        <li><a href="link.html">Link</a></li>
       </ul>
     </div>
     <div class="main">
@@ -89,8 +107,9 @@
 
     </div>
     <footer>
-      <div class="footer-top">Copyright© SAMPLE SITE All Rights Reserved.</div>
-      <div class="footer-bottom">《Web Design:Template-Party》</div>
+      <div class="footer-top">Copyright© <a href="../index.html">SAMPLE SITE</a> All Rights Reserved.</div>
+      <div class="footer-bottom">《<a href="https://template-party.com/" target="_blank">Web Design:Template-Party</a>》
+      </div>
     </footer>
 
 
