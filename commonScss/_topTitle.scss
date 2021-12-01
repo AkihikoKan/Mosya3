@@ -9,3 +9,9 @@
     cursor: pointer;    
   }
 }
+
+@media screen and (max-width:600px) {
+  .topTitle{
+    padding-top: 55px;
+  }
+}
